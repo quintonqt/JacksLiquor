@@ -14,7 +14,7 @@
 			crossorigin="anonymous"
 		/>
 		<link
-			href="https://fonts.googleapis.com/css2?family=Asap:wght@600&family=EB+Garamond:wght@800&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=EB+Garamond:wght@800&display=swap"
 			rel="stylesheet"
 		/>
 		<link href="style.css" rel="stylesheet" />
@@ -23,13 +23,55 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-
 	<body>
-		<div class="container">
-			<h1>Jack's</h1>
-			<h2>BEER · LIQUOR · FINE WINE</h2>
-			<hr />
-			<hr />
+		<div
+			class="modal fade"
+			id="covid-modal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">COVID-19 Hours</h5>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-6 text-right">
+								<div id="days">
+									<p>Mon-Thurs</p>
+									<p>Fri-Sat</p>
+									<p>Sun</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<p>9:30AM - 8:30 PM</p>
+								<p>9:30AM - 9:30 PM</p>
+								<p>12:30PM - 7 PM</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="main">
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<div class="oval">
+						<img src="Jack's Logo.png" id="logo" alt="..." />
+					</div>
+				</div>
+				<div class="col-md-8 text-center align-self-center">
+					<h2 class="my-auto">BEER · LIQUOR · FINE WINE</h2>
+				</div>
+			</div>
+			<hr style="margin-bottom: 0.5rem;" />
+			<hr style="margin-top: 0.5rem;" />
 			<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -68,8 +110,54 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
-		</div>
 
+			<div class="row" id="contact-field">
+				<div class="col-md-6 text-center" id="contact-info">
+					<h3><u>Hours:</u></h3>
+					<div class="row">
+						<div class="col-md-6 text-right">
+							<div id="days">
+								<p>Mon-Thurs</p>
+								<p>Fri-Sat</p>
+								<p>Sun</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<p>9:30AM - 10 PM</p>
+							<p>9:30AM - 11 PM</p>
+							<p>12:30PM - 7 PM</p>
+						</div>
+					</div>
+					<button
+						type="button"
+						class="btn btn-danger"
+						data-toggle="modal"
+						data-target="#covid-modal"
+					>
+						COVID-19 Schedule
+					</button>
+					<h3><u>Contact Us</u></h3>
+					<div class="row">
+						<div class="col-md-6 text-left" id="address">
+							<p>
+								102 Lexington Circle <br />
+								Peachtree City, GA 30269
+							</p>
+						</div>
+						<div class="col-md-6" id="phone">
+							<i class="fas fa-phone" style="font-size: 20px; transform: scaleX(-1);"></i>
+							<a id="phone-link" href="tel:+17704874870">
+								(770) 487-4870
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 text-center vertical-center">
+					<img id="store-front" src="storefront.png" />
+				</div>
+			</div>
+		</div>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
