@@ -35,6 +35,10 @@ hr {
 	border-radius: 5px;
 }
 
+.row {
+	margin: 0;
+}
+
 body {
 	background: url(https://www.designbolts.com/wp-content/uploads/2012/12/simple-pattern-white-seamless-website-background.jpg);
 }
@@ -52,8 +56,8 @@ h3 {
 	font-size: 24px;
 }
 
-#days {
-	padding-right: 70px;
+.days {
+	padding-right: 10px;
 }
 
 p {
@@ -102,6 +106,10 @@ p {
 	justify-content: center;
 }
 
+.hours-container {
+	display: flex;
+}
+
 @media (max-width: 576px) {
 	.container {
 		width: 100%;
@@ -121,5 +129,11 @@ p {
 	#logo {
 		height: 150px;
 		width: auto;
+	}
+	.days {
+		padding: 0 15px 0 0;
+	}
+	.alert-hours {
+		font-size: 15px;
 	}
 }
