@@ -116,6 +116,7 @@ p {
 		padding: 0;
 	}
 	#store-front {
+		margin-top: 20px;
 		width: 100%;
 		height: auto;
 	}
@@ -135,5 +136,10 @@ p {
 	}
 	.alert-hours {
 		font-size: 15px;
+	}
+	#address {
+		padding-left: 15px;
+		text-align: center !important;
+		justify-content: center;
 	}
 }
