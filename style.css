@@ -101,3 +101,14 @@ p {
 .modal-footer {
 	justify-content: center;
 }
+
+@media (max-width: 576px) {
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	#store-front {
+		width: 100%;
+		height: auto;
+	}
+}
